@@ -40,7 +40,9 @@ const Share = () => {
         <div className="share">
            <div className="shareWrapper">
                <div className="shareTop">
-               <img className="shareProfileImg" src={PF + user.profilePicture  ||PF + "profile/noAvatar.png"} alt="" />
+               <img className="shareProfileImg" src={user.profilePicture
+                    ? PF + user.profilePicture
+                    : PF + "noAvatar.png"} alt="" />
                <input placeholder={"Hey how's your day, " + user.username+"?"} className="shareInput" 
                ref={desc}/>
                </div> 

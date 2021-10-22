@@ -59,8 +59,12 @@
     text-align: center;
     color: rgb(48, 166, 196) ;
 }
+.bot{
+    display: flex;
+    justify-content: center;
+}
 .loginRegisterButton{
-    width: 60%;
+    width: 100%;
     align-self: center;
     height: 50px;
     border-radius: 10px;
@@ -70,4 +74,5 @@
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+    padding: 10px;
 }

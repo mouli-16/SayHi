@@ -29,7 +29,7 @@ function App() {
         {user ? <Redirect to="/"/> : <Register/>}
         </Route>
         <Route path="/chat">
-           <Chat/>
+        {!user ? <Redirect to="/"/> : <Chat/>}    
         </Route>
         <Route path="/profile/:username">
            <Profile/>

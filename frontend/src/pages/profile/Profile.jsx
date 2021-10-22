@@ -29,9 +29,13 @@ export default function Profile() {
               <div className="profileRightTop">
                   <div className="profileCover">
                   <img className="profileCoverImg" src={user.coverPicture ? PF + user.coverPicture : PF + "noCover.png"} alt="" />
+                  {/* <div className="profilePicAdd" >
+                      <div>Click to add pic
+                          </div>  */}
                   <img className="profilePic" src={user.profilePicture ? PF + user.profilePicture : PF + "noAvatar.png"} alt="" />
+                  {/* </div> */}
                   </div>
-                  <div className="profileInfo">
+                  <div className="profileInfo"> 
                       <h4 className="profileName">{user.username}</h4>
                       <span className="profileDescp">{user.descp}</span>
                   </div>

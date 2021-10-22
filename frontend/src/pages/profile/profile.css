@@ -42,3 +42,20 @@
 .profileRightBottom{
     display: flex;
 }
+.profilePicAdd{
+    
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     display: flex;
+     object-fit: cover;
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin: auto;
+     top: 150px;
+     border: 3px solid white;
+}
+.profilePicAdd:hover{
+    cursor: pointer;
+}

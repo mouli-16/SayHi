@@ -22,15 +22,19 @@ const Navbar = () => {
            </div>
            <div className="navbarRight">
               <div className="navbarLinks">
-                 <span className="navbarLink">Home</span>
-                 <span className="navbarLink">Timeline</span>
+              <Link to="/" style={{textDecoration:"none"}}>
+                 <span className="navbarLink">Home </span>|
+               </Link>
+               <Link to={`/profile/${user.username}`} style={{textDecoration:"none"}} >
+                 <span className="navbarLink"> Profile</span>
+               </Link>
               </div>
               <div className="navbarIcons">
                  <div className="navbarIconItems">
                     <Person/>
                      <span className="navbarIconBadge">1</span>
                  </div>
-                 <Link to="/chat" >
+                 <Link to="/chat" style={{textDecoration:"none"}} >
                  <div className="navbarIconItems">
                     <Chat/>
                      <span className="navbarIconBadge">1</span>

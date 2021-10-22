@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 
 }
 .chatBoxTop{
@@ -35,9 +36,10 @@
 }
 .chatMessageInput{
     width: 80%;
-    height: 20px;
+    /* height: 20px; */
     border-radius: 20px;
     padding: 10px;
+    margin: 10px;
 }
 .chatSend{
     width: 70px;
@@ -55,4 +57,18 @@
 .chatBoxWrapper,.chatMenuWrapper,.chatOnlineWrapper{
     padding: 10px;
     height: 100%;
+}
+.noConversation{
+    position: absolute;
+    top: 30%;
+    font-size: 50px;
+    color: rgb(224, 220, 220);
+    text-align: center;
+    cursor: default;
+    font-weight: 300;
+    width: 500px;
+
+}
+.noConversation .italic{
+    font-weight: 700;
 }
